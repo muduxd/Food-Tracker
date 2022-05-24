@@ -97,7 +97,7 @@ export default function App() {
             {
               food.map((element, index) => 
                 <TouchableOpacity key={index} onPress={() => completeFood(index)}>
-                  <Item {...element} food={food} setFood={setFood} storeData={storeData} />
+                  <Item {...element} food={food} setFood={setFood} />
                 </TouchableOpacity>
               )
             }

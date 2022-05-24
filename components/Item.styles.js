@@ -8,20 +8,23 @@ export const styles = StyleSheet.create({
         borderRadius: 10,
         flexDirection: 'row',
         alignItems: 'center',
-        justifyContent: 'space-between',
         marginBottom: 20,
     },
 
     itemLeft: {
+        width: '75%',
         flexDirection: 'row',
         alignItems: 'center',
         flexWrap: 'wrap'
     },    
 
     itemRight: {
+        width: '25%',
         flexDirection: 'row',
         alignItems: 'center',
-        flexWrap: 'wrap'
+        justifyContent: 'flex-end',
+        flexWrap: 'wrap',
+        marginRight: 'auto'
     },
 
     square: {
@@ -33,13 +36,12 @@ export const styles = StyleSheet.create({
     },
 
     itemName: {
-        maxWidth: '80%',
+        maxWidth: '60%',
         fontWeight: '500',
         fontSize: 17
     },
 
     itemCalories: {
-        maxWidth: '70%',
         marginHorizontal: 10,
         color: 'grey',
         fontWeight: '600'
